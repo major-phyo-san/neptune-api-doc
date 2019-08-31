@@ -23,7 +23,7 @@ paths:
     get:
       tags:
       - developers
-      summary: searches country
+      summary: search country
       operationId: searchCountry
       description: |
         By passing in the appropriate options, you can search for
@@ -77,9 +77,9 @@ paths:
     post:
       tags:
       - admins
-      summary: adds an country
+      summary: add a country
       operationId: addCountry
-      description: Adds an country to the system
+      description: Add a country to the system
       consumes:
       - application/json
       responses:        
@@ -99,9 +99,9 @@ paths:
         format: int64
       tags:
       - admins
-      summary: adds an country
+      summary: update country information
       operationId: updateCountry
-      description: Adds an country to the system
+      description: Update a country
       consumes:
       - application/json
       responses:
@@ -135,7 +135,7 @@ paths:
     get:
       tags:
       - admins
-      summary: list the rates from database
+      summary: list all rates from database
       operationId: searchRates
       produces: 
       - application/json
@@ -154,7 +154,7 @@ paths:
     post:
       tags:
       - admins
-      summary: creates rate
+      summary: create rate
       operationId: createRate
       consumes:
       - application/json
@@ -483,7 +483,13 @@ definitions:
         format: uuid
         example: 50.641
 
-host: localhost:8000
-basePath: /api
+# host: localhost:8000
+# basePath: /api
+# schemes:
+#  - http
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /major-phyo-san/neptune-currency-api/1.0.0
 schemes:
+ - https
  - http
