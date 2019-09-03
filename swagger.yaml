@@ -32,7 +32,7 @@ paths:
       - application/json
       parameters:
       - in: query
-        name: country_code, country_name
+        name: country_code&country_name
         description: pass an optional search string for looking up country
         required: false
         type: string
@@ -488,8 +488,7 @@ definitions:
 # schemes:
 #  - http
 # Added by API Auto Mocking Plugin
-host: virtserver.swaggerhub.com
-basePath: /major-phyo-san/neptune-currency-api/1.0.0
+host: localhost:8000
+basePath: /api
 schemes:
- - https
  - http
