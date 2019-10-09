@@ -319,7 +319,7 @@ paths:
       tags:
       - developers
       summary: get a latest currency rate
-      operationId: getLatestlRate
+      operationId: getLatestRate
       produces:
       - application/json
       responses:
